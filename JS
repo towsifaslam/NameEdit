@@ -1,0 +1,17 @@
+const headding = document.getElementById("heading");
+const h1 = document.querySelector(".myuyy");
+const font_size = document.querySelector(".fontsize");
+const color = document.querySelector(".color");
+const ff = document.querySelector("#ff");
+headding.onkeyup = () => {
+  h1.innerHTML = headding.value;
+};
+font_size.oninput = () => {
+  h1.style.fontSize = font_size.value + "px";
+};
+color.oninput = () => {
+  h1.style.color = color.value;
+};
+ff.onchange = () => {
+  h1.style.fontFamily = ff.value;
+};
